@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping package="com.persistencia1.domain">
+
+	<class name="Tramite" table="Tramite">
+	
+		<id name="idTrami" column="idTrami">
+			<generator class="native"/>
+		</id>
+		
+		<property name="tipoTram" type="string" column="tipoTram" />
+		<property name="fhcTram" type="timestamp"/>
+		
+	</class>
+	
+</hibernate-mapping>

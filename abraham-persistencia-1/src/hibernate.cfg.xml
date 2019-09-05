@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+    
+        <!-- connection.driver_class :: Driver para MySql            -->
+        <!-- connection.url          :: Ubicación de la B.D.         -->
+        <!-- connection.username     :: Usuario de la B.D.           -->
+        <!-- connection.password     :: Contraseña de la B.D.        -->
+        
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/test_bd</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">admin</property>
+
+        <!-- dialect  :: Dialecto SQL                       -->
+        <!-- show_sql :: Mostrar en consola operaciones SQL -->
+
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+         
+
+        <!-- Use mapping basado en XML-->	
+        <mapping resource="com/persistencia1/domain/Tramite.hbm.xml" />
+        
+        <!-- Usar mapping en base a anotaciones-->
+        
+    </session-factory>
+</hibernate-configuration>
