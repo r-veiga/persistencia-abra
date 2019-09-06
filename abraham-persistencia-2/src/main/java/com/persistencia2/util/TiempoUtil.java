@@ -12,4 +12,8 @@ public class TiempoUtil {
 		Timestamp ahora = new Timestamp((new Date()).getTime());
 		return ahora;
 	}
+	
+	public static String formateaFechaYyyyMMdd(Date fecha) {
+		return yyyyMMdd.format(fecha);
+	}
 }
